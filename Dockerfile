@@ -5,4 +5,5 @@ ENV MOSQUITTO_VERSION 1.4.14-r3
 
 RUN apk add --no-cache mosquitto=$MOSQUITTO_VERSION
 
-
+EXPOSE 1883
+CMD ["mosquitto"]
